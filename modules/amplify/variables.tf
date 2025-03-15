@@ -11,7 +11,6 @@ variable "repository" {
 variable "git_token" {
   description = "github token for authonticate"
   type        = string
-  sensitive   = true
 }
 
 variable "branch_name" {
