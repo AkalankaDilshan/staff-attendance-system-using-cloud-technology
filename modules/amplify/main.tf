@@ -4,7 +4,7 @@ resource "aws_amplify_app" "staff_attendance_app" {
   oauth_token = var.git_token
 }
 
-resource "aws_apmlify_branch" "staff_attendance_app_branch" {
+resource "aws_amplify_branch" "staff_attendance_app_branch" {
   app_id      = aws_amplify_app.staff_attendance_app.id
   branch_name = var.branch_name
 }
