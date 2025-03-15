@@ -5,5 +5,6 @@ resource "aws_amplify_app" "staff_attendance_app" {
 }
 
 resource "aws_apmlify_branch" "staff_attendance_app_branch" {
-
+  app_id      = aws_amplify_app.staff_attendance_app.id
+  branch_name = var.branch_name
 }

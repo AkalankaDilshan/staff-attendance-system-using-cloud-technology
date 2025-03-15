@@ -12,3 +12,9 @@ variable "git_token" {
   description = "github token for authonticate"
   type        = string
 }
+
+variable "branch_name" {
+  description = "repo branch for loading"
+  type        = string
+  default     = "main"
+}
