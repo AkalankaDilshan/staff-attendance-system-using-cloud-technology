@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  TF_VAR_git_token: ${{ secrets.TF_API_TOKEN }}
+
 jobs:
   terraform:
     name: "Terraform"
