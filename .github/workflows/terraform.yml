@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  TF_VAR_git_token: ${{ secrets.GITHUB_TOKEN }}
+  TF_VAR_git_token: ${{ secrets.MY_GITHUB_TOKEN }}
 
 jobs:
   terraform:
