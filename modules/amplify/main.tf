@@ -7,4 +7,11 @@ resource "aws_amplify_app" "staff_attendance_app" {
 resource "aws_amplify_branch" "staff_attendance_app_branch" {
   app_id      = aws_amplify_app.staff_attendance_app.id
   branch_name = var.branch_name
+
+  environment_variables = {
+    ENV = "production"
+  }
+
+  enable_auto_build = true
+
 }
