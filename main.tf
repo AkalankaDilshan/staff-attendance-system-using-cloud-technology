@@ -13,3 +13,12 @@ module "aws_amplify_app" {
   repository = "https://github.com/AkalankaDilshan/CloudBase-Attendance-System-WebApplication-T3-stack.git"
   git_token  = var.git_token
 }
+
+
+// s3 bucket
+
+//lambda function 
+
+//rekognizer 
+
+//face collection
